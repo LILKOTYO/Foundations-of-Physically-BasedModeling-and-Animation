@@ -1,0 +1,4 @@
+D:\JetBrains\software\apps\CLion\ch-0\213.5744.254\bin\cmake\win\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=D:/JetBrains/software/apps/CLion/ch-0/213.5744.254/bin/ninja/win/ninja.exe -G Ninja "D:\Foundations of Physically Based Modeling and Animation\03 Bouncing ball"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/Foundations of Physically Based Modeling and Animation/03 Bouncing ball/cmake-build-debug
