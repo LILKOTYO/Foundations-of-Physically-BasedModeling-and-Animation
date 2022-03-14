@@ -1,3 +1,0 @@
-D:/Foundations of Physically Based Modeling and Animation/03 Bouncing ball/cmake-build-debug/CMakeFiles/03_Bouncing_ball.dir
-D:/Foundations of Physically Based Modeling and Animation/03 Bouncing ball/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/Foundations of Physically Based Modeling and Animation/03 Bouncing ball/cmake-build-debug/CMakeFiles/rebuild_cache.dir
