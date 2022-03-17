@@ -5,6 +5,7 @@
 #include <chrono>
 #include <iostream>
 #include <cmath>
+#include <conio.h>
 
 using std::shared_ptr;
 using std::make_shared;

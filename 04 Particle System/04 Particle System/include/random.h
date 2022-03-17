@@ -13,6 +13,10 @@ float randomUni(float min, float max) {
 	return min + (max - min) * randomUni();
 }
 
+int randomUniint(int min, int max) {
+	return static_cast<int>(min + (max - min) * randomUni());
+}
+
 float randomGas() {
 	static std::normal_distribution<float> distribution;
 	static std::mt19937 generator;

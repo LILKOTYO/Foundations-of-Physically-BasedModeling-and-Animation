@@ -17,7 +17,7 @@ public:
 		return s * u + t * v + p * w;
 	}
 
-	void build(const glm::vec3& axis) {
+	void build(const glm::vec3 axis) {
 		w = glm::normalize(axis);
 		glm::vec3 a = (axis.x > 0.9) ? glm::vec3(0.0, 1.0, 0.0) : glm::vec3(1.0, 0.0, 0.0);
 		u = glm::normalize(glm::cross(a, w));
