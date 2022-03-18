@@ -72,12 +72,12 @@ void ppointgenerator::generateDir(std::vector<shared_ptr<particle>>& list, int f
 
 		theta = UniformList[randomUniint(0, randomcount)] * pi;
 		h = 0.5 * (UniformList[randomUniint(0, randomcount)] + 1.0);
-		v = speed * (GaussianList[randomUniint(0, randomcount)] + 1.0);
+		v = speed * (UniformList[randomUniint(0, randomcount)] + 1.0);
 		color = ColorList[randomUniint(0, randomcount)];
 		time = lifetime + static_cast<int>(0.25 * lifetime * GaussianList[randomUniint(0, randomcount)]);
 
 		phi = sqrt(h) * sigma;
-		glm::vec3 local_v = v * uvw.world(glm::vec3(cos(theta) * sin(phi), sin(theta) * sin(phi), cos(phi)));
+		glm::vec3 local_v = v * uvw.world(glm::vec3(sin(theta) * sin(phi), cos(theta) * sin(phi), cos(phi)));
 		shared_ptr<particle> p = make_shared<particle>(x0, local_v, color, time);
 		list.push_back(p);
 	}

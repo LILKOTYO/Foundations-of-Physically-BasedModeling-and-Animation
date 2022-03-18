@@ -7,13 +7,15 @@
 #include <cmath>
 #include <conio.h>
 
+
 using std::shared_ptr;
 using std::make_shared;
 using std::sqrt;
 
+const int p_count = 1000;
 const int randomcount = 10000;
 float pi = 3.14159265f;
-glm::vec3 background(0.0, 0.0, 0.0);
+glm::vec3 background(0.2, 0.3, 0.3);
 float delta_t = 0.1f;
 glm::vec3 gravity(0.0, -9.8, 0.0);
 
