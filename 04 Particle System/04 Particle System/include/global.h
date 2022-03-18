@@ -12,7 +12,7 @@ using std::shared_ptr;
 using std::make_shared;
 using std::sqrt;
 
-const int p_count = 1000;
+const int p_count = 5000;
 const int randomcount = 10000;
 float pi = 3.14159265f;
 glm::vec3 background(0.2, 0.3, 0.3);

@@ -45,7 +45,7 @@ void ppointgenerator::generateOmni(std::vector<shared_ptr<particle>>& list, int 
 		
 		theta = UniformList[randomUniint(0, randomcount)] * pi;
 		h = UniformList[randomUniint(0, randomcount)];
-		v = speed * (GaussianList[randomUniint(0, randomcount)] + 1.0);
+		v = speed * (UniformList[randomUniint(0, randomcount)] + 1.0);
 		color = ColorList[randomUniint(0, randomcount)];
 		time = lifetime + static_cast<int>(0.25 * lifetime * GaussianList[randomUniint(0, randomcount)]);
 		
@@ -113,7 +113,7 @@ void pdiscgenerator::generate(std::vector<shared_ptr<particle>>& list, int frequ
 
 		theta = UniformList[randomUniint(0, randomcount)] * pi;
 		h = 0.5 * (UniformList[randomUniint(0, randomcount)] + 1.0);
-		v = speed * (GaussianList[randomUniint(0, randomcount)] + 1.0);
+		v = speed * (UniformList[randomUniint(0, randomcount)] + 1.0);
 		theta_disc = UniformList[randomUniint(0, randomcount)] * pi;
 		f = 0.5 * (UniformList[randomUniint(0, randomcount)] + 1.0);
 		color = ColorList[randomUniint(0, randomcount)];
@@ -155,7 +155,7 @@ void pspheregenerator::generate(std::vector<shared_ptr<particle>>& list, int fre
 
 		theta = UniformList[randomUniint(0, randomcount)] * pi;
 		h = 0.5 * (UniformList[randomUniint(0, randomcount)] + 1.0);
-		v = speed * (GaussianList[randomUniint(0, randomcount)] + 1.0);
+		v = speed * (UniformList[randomUniint(0, randomcount)] + 1.0);
 		theta_sphere = UniformList[randomUniint(0, randomcount)] * pi;
 		y = UniformList[randomUniint(0, randomcount)];
 		color = ColorList[randomUniint(0, randomcount)];
