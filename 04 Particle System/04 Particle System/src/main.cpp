@@ -8,8 +8,8 @@ int main() {
 
 	std::cout << a.x << "," << a.y << "," << a.z << std::endl;*/
 	std::vector<shared_ptr<particle>> p_list;
-	ppointgenerator generator(glm::vec3(-2.0, 0, -5.0), glm::vec3(1.0, 0.0, 0.0));
-
+	ppointgenerator generator(glm::vec3(0.0, 0, -5.0), glm::vec3(0.0, 1.0, 0.0));
+	//pdiscgenerator generator(glm::vec3(0.0, 0.0, -3.0), 2.0, glm::vec3(0.0, 0.1, 0.0));
 	render(generator, p_list);
 	return 0;
 }

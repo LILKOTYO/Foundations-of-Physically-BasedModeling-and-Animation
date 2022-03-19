@@ -17,7 +17,7 @@ const int randomcount = 10000;
 float pi = 3.14159265f;
 glm::vec3 background(0.2, 0.3, 0.3);
 float delta_t = 0.1f;
-glm::vec3 gravity(0.0, -9.8, 0.0);
+glm::vec3 gravity(0.0, -0.098, 0.0);
 
 std::vector<float> UniformList = randomUniList(randomcount, -1.0, 1.0);
 std::vector<float> GaussianList = randomGasList(randomcount, -1.0, 1.0);

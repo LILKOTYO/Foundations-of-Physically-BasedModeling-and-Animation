@@ -97,6 +97,7 @@ void render(ppointgenerator& generator, std::vector<shared_ptr<particle>>& p_lis
     {
         if (p_list.size() < p_count)
         {
+            //generator.generate(p_list, 3, 100000, 0.5, 0.1 * pi);
             generator.generateDir(p_list, 3, 100000, 0.5, 0.1 * pi);
             //generator.generateOmni(p_list, 3, 100000, 0.5);
         }
@@ -147,7 +148,7 @@ void render(ppointgenerator& generator, std::vector<shared_ptr<particle>>& p_lis
 
         for (shared_ptr<particle> p : p_list)
         {
-            p->update();
+            p->update_gravity();
         }
 
         generator.check(p_list);
