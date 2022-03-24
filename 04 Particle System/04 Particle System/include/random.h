@@ -27,7 +27,7 @@ float randomGas(float min, float max) {
 	float scale = (max > min) ? max - min : min - max;
 	float sigma = scale / 6.0f;
 	float mu = (min + max) * 0.5f;
-	return scale * randomGas() + mu;
+	return sigma * randomGas() + mu;
 }
 
 glm::vec3 randomunitVec3() {
